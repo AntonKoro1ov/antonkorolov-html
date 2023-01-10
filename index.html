@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<meta name="description" content="Anton Korolov. Front-End Developer">
+<title>Anton Korolov</title>
+<style>
+body {margin-top: 500px; font-family: monospace;}
+
+.name {text-align: center;}
+
+#title { font-weight: bold; margin-top: -20px;}
+
+p {text-align: center;}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container > div {
+  margin: 10px;
+  text-align: center;
+} 
+
+@media only screen and (max-width: 600px) {
+  body {margin-top: 200px;}
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    font-family: monospace;
+  }
+  h1, p, div, a {
+    color: white;
+  }
+  a:hover {
+    color: orange;
+  }
+}
+
+@media screen and (prefers-color-scheme: light) {
+  body {
+    background-color: white;
+    font-family: monospace;
+  }
+  h1, p, div, a {
+    color: black;
+  }
+  a:hover {
+    color: green;
+  }
+}
+
+
+</style>
+</head>
+<body>
+
+<h1 class="name">Anton Korolov</h1>
+<p id="title">Front-End Developer</p>
+<div class="flex-container">
+  <div>
+    <a href="/">
+      Resume
+    </a>
+  </div>
+  <div>
+    <a href="mailto:anton.korolov01@gmail.com">
+      Email
+    </a>
+  </div>
+  <div>
+    <a href="/">
+      LinkedIn
+    </a>
+  </div>
+</div>
+
+</body>
+</html>
